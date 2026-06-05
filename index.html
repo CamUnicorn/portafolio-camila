@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Camila Hernández</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Script para Modelos 3D Interactivos -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <!-- ===================== -->
+    <!-- NAVBAR -->
+    <!-- ===================== -->
+
+    <header>
+
+        <nav class="navbar">
+            <div class="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+            </div> 
+
+            <ul class="menu">
+
+                <li><a href="#inicio">Principal</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#herramientas">Herramientas</a></li>
+                <li><a href="#trayectoria">Trayectoria</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+    
+
+    <!-- ===================== -->
+    <!-- HERO -->
+    <!-- ===================== -->
+
+    <section id="inicio" class="hero">
+
+        <div class="hero-text">
+
+            <h1>
+                ¡Hola! 👋 Soy
+            </h1>
+
+            <h2>
+                Camila Hernández
+            </h2>
+
+        </div>
+        <div class="hero-quote">
+
+            <i class="fa-solid fa-quote-left"></i>
+
+            <p>
+                Estructuro ideas, diseño experiencias,
+                construyo soluciones.
+            </p>
+
+        </div>
+        <div class="hero-image">
+
+            <img src="Vector2.svg" alt="Icono 1" class="floating-icon icon1">
+            <img src="Vector3.svg" alt="Icono 2" class="floating-icon icon2">
+            <img src="Vector4.svg" alt="Icono 3" class="floating-icon icon3">
+            <img src="Vector5.svg" alt="Icono 4" class="floating-icon icon4">
+            <img src="Vector6.svg" alt="Icono 5" class="floating-icon icon5">
+            <img src="Vector7.svg" alt="Icono 6" class="floating-icon icon6">
+            <img src="Vector8.svg" alt="Icono 7" class="floating-icon icon7">
+
+            <img src="img/perfil.png" alt="Camila" class="profile">
+            <div class="hero-buttons">
+
+                <a href="https://drive.google.com/file/d/1nQloQ16YJ3tJ0EZ9ifs3SB8h2vniVQi9/view?usp=sharing"
+                class="btn-primary"
+                target="_blank">
+                    Descargar CV
+                </a>
+
+                <a href="https://linkedin.com/in/camila-hernández-59b0641b5"
+                class="btn-secondary"
+                target="_blank">
+                    LinkedIn
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="social">
+
+            <p>
+                ʕ•́ᴥ•̀ʔっ
+            </p>
+            <h3>Conóceme</h3>
+
+            <div class="social-icons">
+
+                <a href="https://www.behance.net/mariachernand31" target="_blank">
+                    <i class="fab fa-behance"></i>
+                </a>
+
+                <a href="https://www.instagram.com/camilahm_17?igsh=MnlwNTVhcnZ2MGY4" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================== -->
+    <!-- SOBRE MI -->
+    <!-- ===================== -->
+
+    <section id="sobre-mi" class="about">
+
+        <div class="about-image">
+
+            <img src="img/avatar.png" alt="Avatar">
+
+        </div>
+
+        <div class="about-content">
+
+            <h2>
+                Sobre <span>mí</span>
+            </h2>
+
+            <p>
+
+                Soy estudiante de Ingeniería Multimedia con interés en
+                UX/UI, desarrollo web, diseño interactivo y producción
+                digital. Me apasiona convertir ideas en experiencias
+                visuales funcionales que generen impacto positivo en los
+                usuarios.
+
+            </p>
+
+            <div class="skill">
+
+                <span>Italiano</span>
+
+                <div class="progress">
+                    <div class="bar italian"></div>
+                </div>
+
+            </div>
+
+            <div class="skill">
+
+                <span>Inglés</span>
+
+                <div class="progress">
+                    <div class="bar english"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================== -->
+    <!-- PROYECTOS -->
+    <!-- ===================== -->
+
+    <section id="proyectos" class="projects">
+
+        <div class="projects-header">
+            
+            <div class="section-title">
+                <h2>
+                    Proyectos <span>Destacados</span>
+                </h2>
+                <p>
+                    Algunos de los proyectos que reflejan mis habilidades
+                    en diseño, multimedia y desarrollo.
+                </p>
+            </div>
+
+            <div class="model-container-mini">
+                <model-viewer 
+                    id="modelo-interactivo"
+                    src="modelos/penguin.glb" 
+                    alt="Miniatura interactiva" 
+                    camera-controls 
+                    auto-rotate 
+                    disable-zoom
+                    shadow-intensity="1"
+                    loading="lazy">
+                </model-viewer>
+                <span class="drag-hint"><i class="fa-solid fa-hand-pointer"></i> Interactúa conmigo</span>
+            </div>
+
+        </div>
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+
+                <img src="img/interfazz.png" alt="Proyecto UI">
+
+                <h3>Diseño UI/UX</h3>
+
+                <a href="proyectos.html#uxui">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+
+            </div>
+
+            <div class="project-card">
+
+                <img src="img/produccion.jpeg" alt="Producción">
+
+                <h3>Producción Multimedia</h3>
+
+                <a href="proyectos.html#audiovisual">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+
+            </div>
+
+            <div class="project-card">
+
+                <img src="img/render.png" alt="Proyecto Render">
+
+                <h3>Render</h3>
+
+                <a href="proyectos.html#render">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="btn-container">
+            <a href="proyectos.html" class="btn-primary">
+                Más proyectos <i class="fa-solid fa-arrow-right" style="margin-left: 8px; font-size: 0.9rem;"></i>
+            </a>
+        </div>
+
+    </section>
+
+    <!-- ===================== -->
+    <!-- HERRAMIENTAS -->
+    <!-- ===================== -->
+
+    <section id="herramientas" class="tools">
+
+        <h2>
+            Herramientas que impulsan mi creatividad 💡
+        </h2>
+
+        <div class="tools-grid">
+
+            <div class="tool-card">
+
+                <h3>Diseño</h3>
+
+                <p>
+                    Herramientas orientadas al diseño de interfaces y
+                    experiencias digitales.
+                </p>
+
+                <div class="icons">
+
+                    <img src="img/figma.png">
+                    <img src="img/photoshop.png">
+                    <img src="img/illustrator.png">
+
+                </div>
+
+            </div>
+
+            <div class="tool-card">
+
+                <h3>Render</h3>
+
+                <p>
+                    Software utilizado para modelado y visualización
+                    3D.
+                </p>
+
+                <div class="icons">
+
+                    <img src="img/maya.png">
+                    <img src="img/substance.png">                    
+
+                </div>
+
+            </div>
+
+            <div class="tool-card">
+
+                <h3>Video</h3>
+
+                <p>
+                    Edición audiovisual y creación de contenido
+                    multimedia.
+                </p>
+
+                <div class="icons">
+
+                    <img src="img/aftereffects.png">
+                    <img src="img/premiere.png">
+                    <img src="img/capcut.png">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================== -->
+    <!-- TRAYECTORIA -->
+    <!-- ===================== -->
+
+    <section id="trayectoria" class="experience">
+
+        <div class="experience-text">
+
+            <h2>
+                Trayectoria <span>Profesional</span>
+            </h2>
+
+            <div class="timeline">
+
+                <div class="item">
+                    <h3>Universidad Militar Nueva Granada</h3>
+                    <p>2022 – Actualidad</p>
+                    <p>Ingeniería Multimedia</p>
+                </div>
+
+                <div class="item">
+                    <h3>Trabajo Autónomo</h3>
+                    <p>2024 – Actualidad</p>
+                    <p>Freelance en Diseño y Producción Multimedia</p>
+                </div>
+
+                <div class="item">
+                    <h3>Proyectos Académicos</h3>
+                    <p>2022 – Actualidad</p>
+                    <p>Proyectos académicos en UI/UX, Render y Producción audiovisual</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="experience-image">
+
+            <img src="img/celular.png" alt="Mockup">
+
+        </div>
+
+    </section>
+
+    <!-- ===================== -->
+    <!-- FRASE DESLIZANTE -->
+    <!-- ===================== -->
+
+    <section class="marquee">
+
+        <div class="track">
+
+            UX Design ✦ App Design ✦ Dashboard ✦ Wireframe ✦ User Research ✦
+            UX Design ✦ App Design ✦ Dashboard ✦ Wireframe ✦ User Research ✦
+
+        </div>
+
+    </section>
+
+    <!-- ===================== -->
+    <!-- CONTACTO -->
+    <!-- ===================== -->
+
+    <section id="contacto" class="contact">
+
+        <div class="contact-form">
+
+            <h3>Envíame un mensaje</h3>
+
+            <form>
+
+                <input type="text" placeholder="Nombre">
+
+                <input type="email" placeholder="Email">
+
+                <textarea placeholder="Mensaje"></textarea>
+
+                <button type="submit">
+                    Enviar Mensaje
+                </button>
+
+            </form>
+
+        </div>
+
+        <div class="contact-info">
+
+            <h2>CONTÁCTAME</h2>
+
+            <div class="social-contact">
+
+                <a href="https://linkedin.com/in/camila-hernández-59b0641b5">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="https://www.instagram.com/camilahm_17?igsh=MnlwNTVhcnZ2MGY4">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+
+            </div>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                macamilahm@gmail.com
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +57 320 848 3747
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ===================== -->
+    <!-- FOOTER -->
+    <!-- ===================== -->
+
+    <footer>
+
+        <p>
+            Copyright 2026 © CAMILA HERNÁNDEZ | All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
